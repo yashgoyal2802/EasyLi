@@ -83,5 +83,10 @@ public class Login extends AppCompatActivity {
         loginBtn = findViewById(R.id.login);
         progressBar = findViewById(R.id.progressBar);
     }
+
+    public void newregister(View view) {
+        Intent i3 = new Intent(Login.this,Signup.class);
+        startActivity(i3);
     }
+}
 

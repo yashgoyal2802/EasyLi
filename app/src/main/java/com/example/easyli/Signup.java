@@ -83,4 +83,9 @@ public class Signup extends AppCompatActivity {
         regBtn = findViewById(R.id.register);
         progressBar = findViewById(R.id.progressBar);
     }
+
+    public void registered(View view) {
+        Intent i2 = new Intent(Signup.this,Login.class);
+        startActivity(i2);
+    }
 }

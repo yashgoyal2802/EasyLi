@@ -51,6 +51,17 @@
         app:layout_constraintTop_toBottomOf="@+id/password"
         app:layout_constraintVertical_bias="0.24" />
 
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:text="Not a user ?"
+        android:onClick="newregister"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login" />
+
     <ProgressBar
         android:id="@+id/progressBar"
         android:layout_width="wrap_content"

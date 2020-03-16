@@ -56,6 +56,7 @@
         android:layout_marginTop="90dp"
         android:layout_marginEnd="125dp"
         android:text="Logout"
+        android:onClick="logout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button2" />
 </androidx.constraintlayout.widget.ConstraintLayout>
