@@ -1,19 +1,20 @@
-package com.example.easyli.Model;
+package com.example.easyli;
 
-public class books {
+public class model {
     private String title;
     private String author;
-//    private String subtitle;
-//    private String publisher;
+    //private String subtitle;
+//  private String publisher;
     private String description;
     private String issuedtill;
-    private int pages;
+    int pages;
     private String isbn;
 
-    public books() {
+
+    public model() {
     }
 
-    public books(String title, String author, String description, String issuedtill, int pages, String isbn) {
+    public model(String title, String author, String description, String issuedtill, int pages, String isbn) {
         this.title = title;
         this.author = author;
 //        this.subtitle = subtitle;
