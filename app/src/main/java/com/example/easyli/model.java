@@ -8,13 +8,14 @@ public class model {
     private String description;
     private String issuedtill;
     int pages;
+    int issue;
     private String isbn;
 
 
     public model() {
     }
 
-    public model(String title, String author, String description, String issuedtill, int pages, String isbn) {
+    public model(String title, String author, String description, String issuedtill, int pages, String isbn,int issue) {
         this.title = title;
         this.author = author;
 //        this.subtitle = subtitle;
@@ -23,6 +24,7 @@ public class model {
         this.issuedtill = issuedtill;
         this.pages = pages;
         this.isbn = isbn;
+        this.issue=issue;
     }
 
     public String getTitle() {
@@ -87,5 +89,13 @@ public class model {
 
     public void setIsbn(String isbn) {
         this.isbn = isbn;
+    }
+
+    public int getIssue() {
+        return issue;
+    }
+
+    public void setIssue(int issue) {
+        this.issue = issue;
     }
 }

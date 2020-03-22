@@ -4,7 +4,9 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -18,6 +20,8 @@ public class Clicked extends AppCompatActivity {
 
     TextView isbn_tc,title_tc,author_tc,desc_tc,pages_tc;
     DatabaseReference ref;
+    Object issue;
+    String key;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,7 +34,7 @@ public class Clicked extends AppCompatActivity {
         desc_tc=findViewById(R.id.description_tc);
         ref = FirebaseDatabase.getInstance().getReference().child("books");
 
-        String key = getIntent().getStringExtra("key");
+        key = getIntent().getStringExtra("key");
 
         ref.child(key).addValueEventListener(new ValueEventListener() {
             @Override
@@ -40,6 +44,7 @@ public class Clicked extends AppCompatActivity {
                 String title = dataSnapshot.child("title").getValue().toString();
                 String author = dataSnapshot.child("author").getValue().toString();
                 String desc = dataSnapshot.child("description").getValue().toString();
+                issue = dataSnapshot.child("issue").getValue();
 
                 isbn_tc.setText(isbn);
                 title_tc.setText(title);
@@ -53,5 +58,13 @@ public class Clicked extends AppCompatActivity {
 
             }
         });
+    }
+    public void issued(View v){
+        if (issue.toString().equals("0")){
+            ref.child(key).child("issue").setValue(1);
+            Toast.makeText(Clicked.this,"Books Issued",Toast.LENGTH_SHORT).show();
+        }else if(issue.toString().equals("1")){
+            Toast.makeText(Clicked.this,"Book not Available",Toast.LENGTH_SHORT).show();
+        }
     }
 }

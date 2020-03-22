@@ -93,8 +93,6 @@ public class Browsing extends AppCompatActivity {
                         Intent intent = new Intent(getApplicationContext(),Clicked.class);
                         intent.putExtra("key",key);
                         startActivity(intent);
-
-
                     }
                 });
                 holder.txtisbn.setText(model.getIsbn());
