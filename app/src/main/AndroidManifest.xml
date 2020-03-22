@@ -11,10 +11,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".Clicked"></activity>
         <activity android:name=".Browsing" />
         <activity android:name=".deadlinedata" />
         <activity android:name=".IssuedBooks" />
-        <activity android:name=".Signup"/>
+        <activity android:name=".Signup" />
         <activity android:name=".Login" />
         <activity android:name=".MainActivity">
             <intent-filter>
@@ -22,7 +23,6 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
     </application>
 

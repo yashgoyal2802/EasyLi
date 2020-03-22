@@ -11,12 +11,15 @@ import androidx.recyclerview.widget.RecyclerView;
 
 class MyViewHolder extends RecyclerView.ViewHolder {
     TextView txtisbn, txttitle, txtauthor;
+    View view;
+
     public MyViewHolder(@NonNull View itemView) {
         super(itemView);
         //views
         txtisbn = itemView.findViewById(R.id.isbn);
         txttitle = itemView.findViewById(R.id.title);
         txtauthor = itemView.findViewById(R.id.author);
+        view=itemView;
 
     }
 }
