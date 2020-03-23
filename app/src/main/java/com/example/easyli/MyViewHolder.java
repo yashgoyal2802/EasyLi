@@ -20,7 +20,6 @@ class MyViewHolder extends RecyclerView.ViewHolder {
         txttitle = itemView.findViewById(R.id.title);
         txtauthor = itemView.findViewById(R.id.author);
         view=itemView;
-
     }
 }
 
