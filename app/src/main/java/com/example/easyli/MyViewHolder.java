@@ -10,7 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 class MyViewHolder extends RecyclerView.ViewHolder {
-    TextView txtisbn, txttitle, txtauthor;
+    TextView txtisbn, txttitle, txtauthor,txtdeadline;
     View view;
 
     public MyViewHolder(@NonNull View itemView) {
@@ -19,6 +19,7 @@ class MyViewHolder extends RecyclerView.ViewHolder {
         txtisbn = itemView.findViewById(R.id.isbn);
         txttitle = itemView.findViewById(R.id.title);
         txtauthor = itemView.findViewById(R.id.author);
+        txtdeadline = itemView.findViewById(R.id.issuedtill);
         view=itemView;
     }
 }

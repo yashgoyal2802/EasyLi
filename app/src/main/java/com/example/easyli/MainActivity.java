@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(i1);
     }
     public void deadlinedata(View v) {
-        Intent i1 = new Intent(this,IssuedBooks.class);
+        Intent i1 = new Intent(this,deadlinedata.class);
         startActivity(i1);
     }
     public void browsing(View v) {

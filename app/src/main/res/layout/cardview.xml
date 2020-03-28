@@ -52,21 +52,18 @@
                 android:id="@+id/isbn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="ISBN"
                 android:textSize="22sp" />
 
             <TextView
                 android:id="@+id/title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Tiltle"
                 android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/author"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Author"
                 android:textSize="22sp" />
         </LinearLayout>
     </LinearLayout>

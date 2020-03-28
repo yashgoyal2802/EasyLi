@@ -26,17 +26,8 @@ public class IssuedBooks extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
-        RecyclerView recyclerView;
-        DatabaseReference ref1;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_issued_books);
-
-
-        recyclerView=findViewById(R.id.recyclerView2);
-        recyclerView.setHasFixedSize(true);
-
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
-
 
         //Actionbar
         ActionBar actionBar = getSupportActionBar();
