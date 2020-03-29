@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         setupFirebaseListner();
 
         //ColorDrawable colorDrawable = new ColorDrawable(Color.parseColor("#0F9D58"));
-        ColorDrawable colorDrawable = new ColorDrawable(Color.BLUE);
+        ColorDrawable colorDrawable = new ColorDrawable(Color.parseColor("#5F61E6"));
         //Actionbar
         ActionBar actionBar = getSupportActionBar();
         //set title
