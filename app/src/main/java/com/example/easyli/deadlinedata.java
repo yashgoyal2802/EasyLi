@@ -47,6 +47,7 @@ public class deadlinedata extends AppCompatActivity {
             protected void onBindViewHolder(@NonNull MyViewHolder holder, int position, @NonNull model model) {
                 Object issu = model.getIssue();
                 if(issu.toString().equals("1")){
+                    holder.txttitle.setText(model.getTitle());
                     holder.txtdeadline.setText(model.getIssuedtill());
                 }
             }

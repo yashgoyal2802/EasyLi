@@ -109,6 +109,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:onClick="issued"
+        android:background="@drawable/button_background"
         android:paddingTop="8dp"
         android:text="Issue"/>
 

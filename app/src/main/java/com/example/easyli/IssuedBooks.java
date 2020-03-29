@@ -6,6 +6,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -29,10 +31,13 @@ public class IssuedBooks extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_issued_books);
 
+        ColorDrawable cd = new ColorDrawable(Color.parseColor("#0F9D58"));
+
         //Actionbar
         ActionBar actionBar = getSupportActionBar();
         //set title
         actionBar.setTitle("Issued Books");
+        actionBar.setBackgroundDrawable(cd);
 
         ref1 = FirebaseDatabase.getInstance().getReference().child("books");
 
@@ -53,9 +58,10 @@ public class IssuedBooks extends AppCompatActivity {
                     holder.txtisbn.setText(model.getIsbn());
                     holder.txttitle.setText(model.getTitle());
                     holder.txtauthor.setText(model.getAuthor());
-                }else{
-                    Toast.makeText(IssuedBooks.this,"No books Issued",Toast.LENGTH_SHORT).show();
                 }
+//                else{
+//                    Toast.makeText(IssuedBooks.this,"No books Issued",Toast.LENGTH_SHORT).show();
+//                }
             }
 
             @NonNull

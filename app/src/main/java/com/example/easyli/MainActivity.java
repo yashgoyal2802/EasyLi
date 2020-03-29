@@ -1,6 +1,7 @@
 package com.example.easyli;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -23,6 +24,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         b1 = (Button)findViewById(R.id.button4);
         setupFirebaseListner();
+
+//        //Actionbar
+//        ActionBar actionBar = getSupportActionBar();
+//        //set title
+//        actionBar.setTitle("EasyLi");
     }
     public void issueddatabase(View view) {
         Intent i1 = new Intent(this,IssuedBooks.class);
@@ -47,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
                 FirebaseUser user = firebaseAuth.getCurrentUser();
                 if(user!=null){
-                    Toast.makeText(getApplicationContext(),"Signed in",Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(getApplicationContext(),"Signed in",Toast.LENGTH_SHORT).show();
                 }else{
                     Toast.makeText(getApplicationContext(),"Signed out",Toast.LENGTH_SHORT).show();
                     Intent i1 = new Intent(MainActivity.this,Login.class);
