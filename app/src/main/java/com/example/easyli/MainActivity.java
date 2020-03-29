@@ -5,7 +5,10 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.provider.CalendarContract;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -25,10 +28,13 @@ public class MainActivity extends AppCompatActivity {
         b1 = (Button)findViewById(R.id.button4);
         setupFirebaseListner();
 
-//        //Actionbar
-//        ActionBar actionBar = getSupportActionBar();
-//        //set title
-//        actionBar.setTitle("EasyLi");
+        //ColorDrawable colorDrawable = new ColorDrawable(Color.parseColor("#0F9D58"));
+        ColorDrawable colorDrawable = new ColorDrawable(Color.BLUE);
+        //Actionbar
+        ActionBar actionBar = getSupportActionBar();
+        //set title
+        actionBar.setTitle("EasyLi");
+        actionBar.setBackgroundDrawable(colorDrawable);
     }
     public void issueddatabase(View view) {
         Intent i1 = new Intent(this,IssuedBooks.class);
