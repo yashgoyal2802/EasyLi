@@ -7,16 +7,26 @@
     tools:context=".MainActivity">
 
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/back_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <Button
         android:id="@+id/button3"
         android:layout_width="160dp"
         android:layout_height="60dp"
-        android:layout_marginTop="132dp"
+        android:layout_marginTop="140dp"
         android:layout_marginEnd="124dp"
+        android:background="@drawable/button_background"
+        android:elevation="50sp"
         android:onClick="browsing"
         android:text="Browse"
-        android:elevation="50sp"
-        android:background="@drawable/button_background"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

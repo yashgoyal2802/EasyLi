@@ -6,6 +6,15 @@
     android:layout_height="match_parent"
     tools:context=".Login">
 
+    <ImageView
+        android:layout_width="223dp"
+        android:layout_height="143dp"
+        android:layout_marginTop="64dp"
+        android:src="@drawable/app_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
