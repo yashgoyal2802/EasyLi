@@ -15,15 +15,9 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="4"
+            android:layout_weight="3"
             android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/isbnd"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="ISBN: "
-                android:textSize="22sp" />
 
             <TextView
                 android:id="@+id/titled"
@@ -36,7 +30,7 @@
                 android:id="@+id/authord"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Author: "
+                android:text="Deadline: "
                 android:textSize="22sp" />
 
         </LinearLayout>
@@ -48,11 +42,6 @@
             android:layout_margin="8dp"
             android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/isbn"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="22sp" />
 
             <TextView
                 android:id="@+id/title"
@@ -61,7 +50,7 @@
                 android:textSize="18sp" />
 
             <TextView
-                android:id="@+id/author"
+                android:id="@+id/issuedtill"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="22sp" />
