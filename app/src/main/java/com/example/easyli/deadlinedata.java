@@ -6,6 +6,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -25,11 +27,12 @@ public class deadlinedata extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_deadlinedata);
-
+        ColorDrawable cd2 = new ColorDrawable(Color.parseColor("#5F61E6"));
         //Actionbar
         ActionBar actionBar = getSupportActionBar();
         //set title
         actionBar.setTitle("Deadline");
+        actionBar.setBackgroundDrawable(cd2);
 
         ref2 = FirebaseDatabase.getInstance().getReference().child("books");
 

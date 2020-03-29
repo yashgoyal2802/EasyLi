@@ -31,7 +31,7 @@ public class IssuedBooks extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_issued_books);
 
-        ColorDrawable cd = new ColorDrawable(Color.parseColor("#0F9D58"));
+        ColorDrawable cd = new ColorDrawable(Color.parseColor("#5F61E6"));
 
         //Actionbar
         ActionBar actionBar = getSupportActionBar();

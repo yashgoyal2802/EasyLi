@@ -1,8 +1,11 @@
 package com.example.easyli;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -32,6 +35,13 @@ public class Clicked extends AppCompatActivity {
         author_tc=findViewById(R.id.author_tc);
         pages_tc=findViewById(R.id.pages_tc);
         desc_tc=findViewById(R.id.description_tc);
+        ColorDrawable cd2 = new ColorDrawable(Color.parseColor("#5F61E6"));
+        //Actionbar
+        ActionBar actionBar = getSupportActionBar();
+        //set title
+        actionBar.setTitle("Book Details");
+        actionBar.setBackgroundDrawable(cd2);
+
         ref = FirebaseDatabase.getInstance().getReference().child("books");
 
         key = getIntent().getStringExtra("key");

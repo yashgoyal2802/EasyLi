@@ -7,6 +7,8 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -33,10 +35,13 @@ public class Browsing extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_browsing);
 
+        ColorDrawable cd2 = new ColorDrawable(Color.parseColor("#5F61E6"));
+
         //Actionbar
         ActionBar actionBar = getSupportActionBar();
         //set title
         actionBar.setTitle("Books List");
+        actionBar.setBackgroundDrawable(cd2);
 
         //search view
         inputsearch=findViewById(R.id.searchview);

@@ -104,13 +104,15 @@
                 android:textSize="22dp" />
         </LinearLayout>
     </LinearLayout>
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
-        android:onClick="issued"
         android:background="@drawable/button_background"
+        android:onClick="issued"
         android:paddingTop="8dp"
-        android:text="Issue"/>
+        android:text="Issue"
+        android:textSize="22dp"/>
 
 </LinearLayout>
